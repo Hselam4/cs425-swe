@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/web-form-two.js"></script>
+    <style>
+        .navbar-custom{
+            background-color: #35A6E7;
+
+
+        }
+        .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+            border-right: 2px solid #FFF;
+        }
+        .top-buffer{
+            margin-top: 50px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="webform2.css">
+    <title>eRegistral</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-custom navbar-dark ">
+    <a class="navbar-brand" href="#">MUM STUDENT REGISTRATION SYSTEM:::SR System</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Courses<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Program</a>
+            </li>
+
+
+        </ul>
+        <div>
+            <a class="navbar-brand" href="#"> Hello!</a>
+
+            <button type="submit" class="btn">Sign Out</button>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class="top-buffer">New Registration Form</h2>
+    <div class="div-form">
+        <form>
+            <div class="row top-buffer justify-content-end">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="lName">Last Name</label>
+                        <input id="lName" type="text" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">Student Id</label>
+                        <input id="studentId" type="text" class="form-control" >
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="program">Program</label>
+                        <input id="program" type="number"  class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="courses">Courses</label>
+
+                        <select id="courses" class="form-control">
+                            <option selected>Select a Course</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label><br>
+                        <input id="date" type="text" class="form-control" placeholder="yyyy-mm-dd"pattern="^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|1[0-9]|2[0-9]|3[0-1])"required >
+                        <small id="validDate" class="form-text text-muted">Enter a valid Date.</small>
+                    </div>
+                </div>
+
+                <div style="float: right;">
+
+                    <button type="submit" class="btn btn-outline-primary pull-right">Reset</button>
+                    <button type="submit" class="btn btn-outline-warning">Cancel</button>
+                    <button type="submit" class="btn btn-outline-info">Submit</button>
+
+                </div>
+
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>
