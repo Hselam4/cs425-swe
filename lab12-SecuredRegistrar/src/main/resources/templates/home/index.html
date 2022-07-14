@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="public/fragments/head-elements :: headElements"></head>
+<title>Eregistrar- Home</title>
+</head>
+<body>
+<div th:replace="public/fragments/header :: header"></div>
+<div id="mainContainer" class="container">
+    <h3>Welcome to the MIU Registration</h3>
+    <hr/>
+    <div>
+        <img id="banner-img" th:src="@{/images/MIU.jpg}" alt="Maharishi University">
+    </div>
+    <div style="font-size: 1em;margin-top: .75em;">
+        <p>To browse or manage data for collection of <a href="/eregistrar/list">Students</a> , please first make sure to read the
+            instructions and key points provided below. And then click the
+            appropriate menu item, located on the nav-bar above.
+        </p>
+        <p>
+            Maharishi University of Management offers admissions to diverse Bachelors,
+            Masters, and Ph.D. programs for its applicants coming from different corners of the world.
+            It is now popularly called as Maharishi International University. The university boasts an
+            acceptance rate of 100% with an application calendar for the fall semester. International
+            applicants applying to UG courses at Maharishi International University are required to have
+            a GPA of 2.5 (76-79%) and those applying to PG courses need 3.0 (83-86%). Applications are
+            invited for fall and spring semesters from international applicants.
+        </p>
+    </div>
+</div>
+
+<div th:replace="public/fragments/footer :: footer"></div>
+<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>-->
+</body>
+</html>
